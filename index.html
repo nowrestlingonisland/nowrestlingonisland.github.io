@@ -36,9 +36,7 @@
 	footer {
 		border-top: 1px solid grey;
 		margin-top: 1em;
-		padding: 1em;
-		font-size: 0.7em;
-		font-family: Sans-serif;
+		padding: 1em
 	}
 	h1,h2,h3 {
 		line-height:1.2;
@@ -49,6 +47,8 @@
 		}
 	}
 	label, a {
+		font-size: 0.7em;
+		font-family: Sans-serif;
 		text-decoration: underline;
 		color: blue;
 	}
@@ -57,10 +57,10 @@
 	background-image: url("https://cutewallpaper.org/21/trippy-myspace-backgrounds/Backgrounds-myspace-GIF-Find-on-GIFER.gif");
 	color: white;
 }
-#toggle-mode-insanity:checked ~  #insanity-mode-on {
+#toggle-mode-insanity:checked ~  footer>#insanity-mode-on {
 	display: none;
 } 
-#toggle-mode-insanity:not(:checked) ~  #insanity-mode-off {
+#toggle-mode-insanity:not(:checked) ~  footer>#insanity-mode-off {
 	display: none;
 } 
 </style>
@@ -80,6 +80,5 @@
 <footer>
 <label for="toggle-mode-insanity" id="insanity-mode-on" >Turn on insanity mode</label>
 <label for="toggle-mode-insanity" id="insanity-mode-off">Turn off insanity mode</label>
-| <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZAR59xR4YLV0p5_djmp0Q35q1pJ5gvMeex5H8C6LY-3Tdbw/viewform?usp=sf_link">Sign up to get updates</a>
-| <a href="./about.html">About</a>
+| <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZAR59xR4YLV0p5_djmp0Q35q1pJ5gvMeex5H8C6LY-3Tdbw/viewform?usp=sf_link">Sign up to get updates</a> | <a href="./about.html">About</a>
 </footer>
