@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Wrestling On Island</title>
+  <meta name="description" content="Occasional writings.">
+  <meta name="keywords" content="humour">
+  <meta property="og:title" content="No Wrestling On Island">
+  <meta property="og:url" content="https://nowrestlingonisland.github.io">
+  <meta property="og:description" content="Occasional writings.">
+  <meta property="og:type" content="website">
+  <!--<meta property="og:image" content="https://newcss.net/_assets/og.png">-->
+<style>
+	@media (prefers-color-scheme: dark){
+		body {color:#0f0;background:#000;font-family:Monospace}
+		a:link {color:#9cf}
+		a:hover, a:visited:hover {color:#cef}
+		a:visited {color:#c9f}
+	}
+	body{
+		margin:1em auto;
+		max-width:40em;
+		padding:0 .62em;
+		font-family: Georgia;
+		font-size: 1.2em;
+	}
+	header {
+		border-bottom: 1px solid grey;
+		padding-bottom: 1em;
+		font-family: Helvetica, sans;
+		font-style: italic;
+		font-size: 1.1em;
+		display: flex;
+	}
+	h1,h2,h3 {
+		line-height:1.2;
+	}
+	@media print{
+		body{
+			max-width:none
+		}
+	}
+	label, a {
+		font-size: 0.7em;
+		font-family: Sans-serif;
+		text-decoration: underline;
+		color: blue;
+	}
+#toggle-mode-insanity:checked + 
+  #the-real-article {
+	background-image: url("https://cutewallpaper.org/21/trippy-myspace-backgrounds/Backgrounds-myspace-GIF-Find-on-GIFER.gif");
+	color: white;
+}
+#toggle-mode-insanity:checked ~  #insanity-mode-on {
+	display: none;
+} 
+#toggle-mode-insanity:not(:checked) ~  #insanity-mode-off {
+	display: none;
+} 
+</style>
+<input type="checkbox" name="toggle-mode-insanity" id="toggle-mode-insanity" style="display:none"/>
+<article id="the-real-article">
+<header>
+<img style="width: 2em; height: 2em; padding-right: 1em" src="file:///Users/newuser/Tavish's%20Google%20Drive/NoWrestlingOnIsland/header.jpg"/>
+<span>No Wrestling<br/>On Island</span>
+</header>
+</div>
+
+<h2>About</h2>
+
+Contact info would go here
+
+</article>
+<label for="toggle-mode-insanity" id="insanity-mode-on" >Turn on insanity mode</label>
+<label for="toggle-mode-insanity" id="insanity-mode-off">Turn off insanity mode</label>
