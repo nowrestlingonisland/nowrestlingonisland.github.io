@@ -18,7 +18,7 @@
 		a:hover, a:visited:hover {color:#cef}
 		a:visited {color:#c9f}
 	}
-	body{
+	article {
 		margin:1em auto;
 		max-width:40em;
 		padding:0 .62em;
@@ -52,35 +52,52 @@
 		text-decoration: underline;
 		color: blue;
 	}
-#toggle-mode-insanity:checked + 
-  #the-real-article {
-	background-image: url("https://cutewallpaper.org/21/trippy-myspace-backgrounds/Backgrounds-myspace-GIF-Find-on-GIFER.gif");
-	color: white;
-}
-#toggle-mode-insanity:checked ~  footer>#insanity-mode-on {
-	display: none;
-} 
-#toggle-mode-insanity:not(:checked) ~  footer>#insanity-mode-off {
-	display: none;
-} 
+	#toggle-mode-dark:checked + article {
+		body {color:#0f0;background:#000;font-family:Monospace}
+		a:link {color:#9cf}
+		a:hover, a:visited:hover {color:#cef}
+		a:visited {color:#c9f}
+	}
+	#toggle-mode-dark:checked ~ footer > #dark-mode-on {
+		display: none;
+	} 
+	#toggle-mode-dark:not(:checked) ~ footer > #dark-mode-off {
+		display: none;
+	} 
+	#toggle-mode-insanity:checked + #the-real-article {
+		background-image: url("https://cutewallpaper.org/21/trippy-myspace-backgrounds/Backgrounds-myspace-GIF-Find-on-GIFER.gif");
+		color: white;
+	}
+	#toggle-mode-insanity:checked ~ footer > #insanity-mode-on {
+		display: none;
+	} 
+	#toggle-mode-insanity:not(:checked) ~ footer > #insanity-mode-off {
+		display: none;
+	} 
 </style>
+<input type="checkbox" name="toggle-mode-dark" id="toggle-mode-dark" style="display:none"/>
 <input type="checkbox" name="toggle-mode-insanity" id="toggle-mode-insanity" style="display:none"/>
 <article id="the-real-article">
-<header>
-<img style="width: 2em; height: 2em; padding-right: 1em" src="./header.jpg"/>
-<span>No Wrestling<br/>On Island</span>
-</header>
-</div>
+	<header>
+		<img style="width: 2em; height: 2em; padding-right: 1em" src="./header.jpg"/>
+		<span>No Wrestling<br/>On Island</span>
+	</header>
 
-<h2>Under construction</h2>
+	<h2>Under construction</h2>
 
-<img style="width: 15em; height: 15em;" src="./uc.gif"/>
+	<img style="width: 15em; height: 15em;" src="./uc.gif"/>
 
 </article>
 <footer>
-<label for="toggle-mode-insanity" id="insanity-mode-on" >Turn on insanity mode</label>
-<label for="toggle-mode-insanity" id="insanity-mode-off">Turn off insanity mode</label>
-| <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZAR59xR4YLV0p5_djmp0Q35q1pJ5gvMeex5H8C6LY-3Tdbw/viewform?usp=sf_link">Sign up to get updates</a> | <a href="./about.html">About</a>
+	<label for="toggle-mode-dark" id="dark-mode-on" >Turn on dark mode</label>
+	<label for="toggle-mode-dark" id="dark-mode-off">Turn off dark mode</label>
+	| 
+	<label for="toggle-mode-insanity" id="insanity-mode-on" >Turn on insanity mode</label>
+	<label for="toggle-mode-insanity" id="insanity-mode-off">Turn off insanity mode</label>
+	|
+	<a href="https://docs.google.com/forms/d/e/1FAIpQLSeZAR59xR4YLV0p5_djmp0Q35q1pJ5gvMeex5H8C6LY-3Tdbw/viewform?usp=sf_link">Sign up to get updates</a> 
+	| 
+	<a href="./about.html">About</a>
 </footer>
 <script src="https://getinsights.io/js/insights.js"></script>
 <script>
