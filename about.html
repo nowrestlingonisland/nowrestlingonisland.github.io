@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,66 +12,140 @@
   <meta property="og:description" content="Occasional writings.">
   <meta property="og:type" content="website">
   <!--<meta property="og:image" content="https://newcss.net/_assets/og.png">-->
-<style>
-	@media (prefers-color-scheme: dark){
-		body {color:#0f0;background:#000;font-family:Monospace}
-		a:link {color:#9cf}
-		a:hover, a:visited:hover {color:#cef}
-		a:visited {color:#c9f}
-	}
-	body{
-		margin:1em auto;
-		max-width:40em;
-		padding:0 .62em;
-		font-family: Georgia;
-		font-size: 1.2em;
-	}
-	header {
-		border-bottom: 1px solid grey;
-		padding-bottom: 1em;
-		font-family: Helvetica, sans;
-		font-style: italic;
-		font-size: 1.1em;
-		display: flex;
-	}
-	h1,h2,h3 {
-		line-height:1.2;
-	}
-	@media print{
-		body{
-			max-width:none
-		}
-	}
-	label, a {
-		font-size: 0.7em;
-		font-family: Sans-serif;
-		text-decoration: underline;
-		color: blue;
-	}
-#toggle-mode-insanity:checked + 
-  #the-real-article {
-	background-image: url("https://cutewallpaper.org/21/trippy-myspace-backgrounds/Backgrounds-myspace-GIF-Find-on-GIFER.gif");
-	color: white;
-}
-#toggle-mode-insanity:checked ~  #insanity-mode-on {
-	display: none;
-} 
-#toggle-mode-insanity:not(:checked) ~  #insanity-mode-off {
-	display: none;
-} 
-</style>
-<input type="checkbox" name="toggle-mode-insanity" id="toggle-mode-insanity" style="display:none"/>
-<article id="the-real-article">
-<header>
-<img style="width: 2em; height: 2em; padding-right: 1em" src="file:///Users/newuser/Tavish's%20Google%20Drive/NoWrestlingOnIsland/header.jpg"/>
-<span>No Wrestling<br/>On Island</span>
-</header>
-</div>
+  <style>
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: #0f0;
+        background: #000;
+        font-family: Monospace
+      }
 
-<h2>About</h2>
+      a:link {
+        color: #9cf
+      }
 
-Contact info would go here
+      a:hover,
+      a:visited:hover {
+        color: #cef
+      }
 
-</article>
-<label for="toggle-mode-insanity" id="insanity-mode-on" >Turn on insanity mode</label>
-<label for="toggle-mode-insanity" id="insanity-mode-off">Turn off insanity mode</label>
+      a:visited {
+        color: #c9f
+      }
+    }
+
+    html,
+    body {
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+      height: 100%;
+    }
+
+    #mode-wrapper {
+      min-height: 100%;
+    }
+
+    #article-wrapper {
+      margin: 1em auto;
+      max-width: 40em;
+      padding: 0 .62em;
+      font-family: Georgia;
+      font-size: 1.2em;
+    }
+
+    header {
+      border-bottom: 1px solid grey;
+      padding-bottom: 1em;
+      font-family: Helvetica, sans;
+      font-style: italic;
+      font-size: 1.1em;
+      display: flex;
+    }
+
+    footer {
+      border-top: 1px solid grey;
+      margin-top: 1em;
+      padding: 1em;
+      text-align: center;
+      font-size: 0.7em;
+      font-family: Sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+    }
+
+    label,
+    a {
+      text-decoration: underline;
+      color: blue;
+    }
+
+    #toggle-mode-dark:checked~#mode-wrapper {
+      color: #0f0;
+      background: #000;
+      font-family: Monospace
+    }
+
+    #toggle-mode-dark:checked~#mode-wrapper #dark-mode-on {
+      display: none;
+    }
+
+    #toggle-mode-dark:not(:checked)~#mode-wrapper #dark-mode-off {
+      display: none;
+    }
+
+    #toggle-mode-insanity:checked~#mode-wrapper {
+      background-image: url("https://cutewallpaper.org/21/trippy-myspace-backgrounds/Backgrounds-myspace-GIF-Find-on-GIFER.gif");
+      color: white;
+    }
+
+    #toggle-mode-insanity:checked~#mode-wrapper #insanity-mode-on {
+      display: none;
+    }
+
+    #toggle-mode-insanity:not(:checked)~#mode-wrapper #insanity-mode-off {
+      display: none;
+    }
+  </style>
+</head>
+  <input type="checkbox" name="toggle-mode-dark" id="toggle-mode-dark" style="display:none" />
+  <input type="checkbox" name="toggle-mode-insanity" id="toggle-mode-insanity" style="display:none" />
+  <div id="mode-wrapper">
+    <div id="article-wrapper">
+      <header>
+        <img style="width: 2em; height: 2em; padding-right: 1em" src="./header.jpg" />
+        <span>No Wrestling<br />On Island</span>
+      </header>
+
+      <article>
+
+        <h2>About</h2>
+
+        Contact info etc to go here
+
+      </article>
+      <footer>
+        <label for="toggle-mode-dark" id="dark-mode-on">Turn on dark mode</label>
+        <label for="toggle-mode-dark" id="dark-mode-off">Turn off dark mode</label>
+        |
+        <label for="toggle-mode-insanity" id="insanity-mode-on">Turn on insanity mode</label>
+        <label for="toggle-mode-insanity" id="insanity-mode-off">Turn off insanity mode</label>
+        |
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZAR59xR4YLV0p5_djmp0Q35q1pJ5gvMeex5H8C6LY-3Tdbw/viewform?usp=sf_link">Sign up to get updates</a>
+        |
+        <a href="./about.html">About</a>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://getinsights.io/js/insights.js"></script>
+  <script>
+    insights.init('kK9E2SW1OMV_arS9');
+    insights.trackPages();
+  </script>
+    
+</html>
