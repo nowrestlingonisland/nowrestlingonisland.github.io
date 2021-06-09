@@ -34,11 +34,18 @@
       }
     }
 
-    #mode-wrapper {
-      height: 100vh;
-      position: relative;  
+    html,
+    body {
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+      height: 100%;
     }
-    
+
+    #mode-wrapper {
+      min-height: 100%;
+    }
+
     #article-wrapper {
       margin: 1em auto;
       max-width: 40em;
@@ -78,9 +85,9 @@
     }
 
     #toggle-mode-dark:checked~#mode-wrapper {
-        color: #0f0;
-        background: #000;
-        font-family: Monospace
+      color: #0f0;
+      background: #000;
+      font-family: Monospace
     }
 
     #toggle-mode-dark:checked~#mode-wrapper #dark-mode-on {
@@ -104,6 +111,7 @@
       display: none;
     }
   </style>
+</head>
   <input type="checkbox" name="toggle-mode-dark" id="toggle-mode-dark" style="display:none" />
   <input type="checkbox" name="toggle-mode-insanity" id="toggle-mode-insanity" style="display:none" />
   <div id="mode-wrapper">
@@ -113,29 +121,31 @@
         <span>No Wrestling<br />On Island</span>
       </header>
 
-    <article>
+      <article>
 
-      <h2>Under construction</h2>
+        <h2>Under construction</h2>
 
-      <img style="width: 15em; height: 15em;" src="./uc.gif" />
+        <img style="width: 15em; height: 15em;" src="./uc.gif" />
 
-    </article>
-    <footer>
-      <label for="toggle-mode-dark" id="dark-mode-on">Turn on dark mode</label>
-      <label for="toggle-mode-dark" id="dark-mode-off">Turn off dark mode</label>
-      |
-      <label for="toggle-mode-insanity" id="insanity-mode-on">Turn on insanity mode</label>
-      <label for="toggle-mode-insanity" id="insanity-mode-off">Turn off insanity mode</label>
-      |
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZAR59xR4YLV0p5_djmp0Q35q1pJ5gvMeex5H8C6LY-3Tdbw/viewform?usp=sf_link">Sign up to get updates</a>
-      |
-      <a href="./about.html">About</a>
-    </footer>
+      </article>
+      <footer>
+        <label for="toggle-mode-dark" id="dark-mode-on">Turn on dark mode</label>
+        <label for="toggle-mode-dark" id="dark-mode-off">Turn off dark mode</label>
+        |
+        <label for="toggle-mode-insanity" id="insanity-mode-on">Turn on insanity mode</label>
+        <label for="toggle-mode-insanity" id="insanity-mode-off">Turn off insanity mode</label>
+        |
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZAR59xR4YLV0p5_djmp0Q35q1pJ5gvMeex5H8C6LY-3Tdbw/viewform?usp=sf_link">Sign up to get updates</a>
+        |
+        <a href="./about.html">About</a>
+      </footer>
     </div>
   </div>
-  
+
   <script src="https://getinsights.io/js/insights.js"></script>
   <script>
     insights.init('kK9E2SW1OMV_arS9');
     insights.trackPages();
   </script>
+    
+</html>
