@@ -1,0 +1,114 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #0f0;
+        background: #000;
+        font-family: Monospace
+    }
+
+    a:link {
+        color: #9cf
+    }
+
+    a:hover,
+    a:visited:hover {
+        color: #cef
+    }
+
+    a:visited {
+        color: #c9f
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#mode-wrapper {
+    margin: 0;
+    height: 100%;
+}
+
+#top-spacer {
+    margin-bottom: 1em;
+}
+
+#article-wrapper {
+    margin: auto;
+    padding: 1em;
+    max-width: 40em;
+}
+
+header {
+    border-bottom: 1px solid grey;
+    padding-bottom: 1em;
+    font-family: Helvetica, sans;
+    font-style: italic;
+    font-size: 1.1em;
+    display: flex;
+}
+
+article {
+    font-family: Georgia;
+    font-size: 1.2em;
+}
+
+footer {
+    border-top: 1px solid grey;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.7em;
+    font-family: Sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+label,
+a {
+    text-decoration: underline;
+    color: blue;
+}
+
+#toggle-mode-dark, #toggle-mode-insanity {
+    display: none;
+    margin: 0;
+}
+
+#toggle-mode-dark:checked~#mode-wrapper {
+    color: #0f0;
+    background: #000;
+    font-family: Monospace
+}
+
+#toggle-mode-dark:checked~#mode-wrapper #article {
+    color: #0f0;
+    background: #000;
+    font-family: Monospace
+}
+
+#toggle-mode-dark:checked~#mode-wrapper #dark-mode-on {
+    display: none;
+}
+
+#toggle-mode-dark:not(:checked)~#mode-wrapper #dark-mode-off {
+    display: none;
+}
+
+#toggle-mode-insanity:checked~#mode-wrapper {
+    background-image: url("https://cutewallpaper.org/21/trippy-myspace-backgrounds/Backgrounds-myspace-GIF-Find-on-GIFER.gif");
+    color: white;
+}
+
+#toggle-mode-insanity:checked~#mode-wrapper #insanity-mode-on {
+    display: none;
+}
+
+#toggle-mode-insanity:not(:checked)~#mode-wrapper #insanity-mode-off {
+    display: none;
+}
