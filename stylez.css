@@ -27,6 +27,8 @@ html, body {
 
 #mode-wrapper {
     margin: 0;
+    display: table;
+    width: 100%;
     height: 100%;
 }
 
