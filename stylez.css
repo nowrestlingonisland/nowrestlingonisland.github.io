@@ -79,16 +79,18 @@ a {
 
 #toggle-mode-dark, #toggle-mode-insanity {
     display: none;
-    margin: 0;
 }
 
 #toggle-mode-dark:checked~#mode-wrapper {
     color: #0f0;
     background: #000;
-    font-family: Monospace
 }
 
-#toggle-mode-dark:checked~#mode-wrapper #article {
+#toggle-mode-dark:checked~#mode-wrapper label, #toggle-mode-dark:checked~#mode-wrapper a {
+    color: white;
+}
+
+#toggle-mode-dark:checked~#mode-wrapper article {
     color: #0f0;
     background: #000;
     font-family: Monospace
