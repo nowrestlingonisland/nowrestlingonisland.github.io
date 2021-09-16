@@ -45,9 +45,9 @@ html, body {
 header {
     border-bottom: 1px solid grey;
     padding-bottom: 1em;
-    font-family: Helvetica, sans;
+    font-family: Monospace;
     font-style: italic;
-    font-size: 1.1em;
+    font-size: 1.7em;
     display: flex;
 }
 
@@ -67,7 +67,7 @@ footer {
 
 h1 {
     line-height: 1.2;
-    font-family: American Typewriter;
+    font-family: Monospace;
 }
 
 h2 {
